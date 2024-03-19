@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(33, 32, 32);
+}
+
+.main-container {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.container {
+  background-color: goldenrod;
+  border: 2px solid goldenrod;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.container h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.container input {
+  border: none;
+  border-radius: 10px;
+  height: 2rem;
+  width: 20rem;
+  color: black;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+.btn {
+  border: none;
+  padding: 10px;
+  color: white;
+  background: rgb(215, 77, 72);
+  background: linear-gradient(
+    90deg,
+    rgba(215, 77, 72, 1) 0%,
+    rgba(253, 29, 29, 1) 0%,
+    rgba(142, 23, 168, 1) 62%
+  );
+  border-radius: 15px;
+  width: 10rem;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+#error-message {
+  font-size: 1.5rem;
+  display: none;
+}
+.placeholder-red::placeholder {
+  color: red;
+}
