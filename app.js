@@ -7,7 +7,7 @@ const qrError = document.getElementById('error-message');
 
 
 qrBtn.addEventListener('click', ()=>{
-    const inputValue = qrLink.value;
+    const inputValue = qrLink.value.trim();
 
     if(!inputValue){
         qrLink.classList.add('placeholder-red');
@@ -15,9 +15,12 @@ qrBtn.addEventListener('click', ()=>{
 
         //this will enable the bottom text
         qrError.style.display = 'block';
+
+        qrLink.value = '';
         return;
     }
     else{
+        qrError.style.display = 'none';
         qrImage.src= `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputValue}`;
         qrImage.alt = `${inputValue}`
     }
